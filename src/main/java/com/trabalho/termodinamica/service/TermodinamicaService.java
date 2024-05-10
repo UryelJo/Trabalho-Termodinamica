@@ -4,7 +4,9 @@ import com.trabalho.termodinamica.dto.CelsiusDTO;
 import com.trabalho.termodinamica.dto.FahrenheitDTO;
 import com.trabalho.termodinamica.dto.KelvinDTO;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TermodinamicaService {
 
     public ResponseEntity<CelsiusDTO> converterCelsius(Double celsius) {
